@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -7,10 +8,15 @@ import ExperienceSection from './components/ExperienceSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import SythAIPage from './components/SythAIPage';
+import { initSmoothScroll } from './utils/smoothScroll';
 import './styles/animations.css';
 
 function App() {
   useEffect(() => {
+    // Initialize smooth scrolling
+    initSmoothScroll();
+    
     // Update page title
     document.title = "Assem Alghaithi | Software Engineer";
     
@@ -32,8 +38,8 @@ function App() {
     };
   }, []);
 
-  return (
-    <div className="App">
+  const HomePage = () => (
+    <>
       <Header />
       <main>
         <HeroSection />
@@ -44,7 +50,18 @@ function App() {
         <ContactSection />
       </main>
       <Footer />
-    </div>
+    </>
+  );
+
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/syth-ai" element={<SythAIPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

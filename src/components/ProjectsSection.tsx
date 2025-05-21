@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { projects } from '../data/personalInfo';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -85,15 +86,25 @@ const ProjectsSection: React.FC = () => {
                   </button>
                   
                   <div className="flex space-x-3">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                      aria-label={`View ${project.title} project`}
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.id === "syth-ai" ? (
+                      <Link 
+                        to="/projects/syth-ai"
+                        className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                        aria-label={`View ${project.title} project details`}
+                      >
+                        <ExternalLink size={20} />
+                      </Link>
+                    ) : (
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                        aria-label={`View ${project.title} project`}
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
 

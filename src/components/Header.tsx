@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
+import { scrollToSection as smoothScrollToSection } from '../utils/smoothScroll';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,8 @@ const Header: React.FC = () => {
   };
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      closeMenu();
-    }
+    smoothScrollToSection(sectionId);
+    closeMenu();
   };
 
   return (

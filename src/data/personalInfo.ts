@@ -57,7 +57,7 @@ export const projects = [
     description: "A course planning tool for Skyline College, Cañada College, and College of San Mateo students that generates optimal class schedules based on course availability and academic goals.",
     image: "/src/pictures/skylinecollege.png",
     technologies: ["Java", "Java Swing", "Maven", "UI Design"],
-    link: "#",
+    link: "https://github.com/AALG123/DegreeClassGenerator",
     github: "https://github.com/AALG123/DegreeClassGenerator",
     category: "Educational Software",
     featured: true,
@@ -99,14 +99,14 @@ export const projects = [
   },
   {
     id: "syth-ai",
-    title: "Syth AI Contribution",
-    description: "Contributed to Syth AI, an innovative platform designed to assist users in software development with starter templates and tools.",
+    title: "Syth AI",
+    description: "An expert AI assistant and senior software developer with extensive knowledge across numerous programming languages, frameworks, and best practices.",
     image: "/src/pictures/Ios syth app.png",
-    technologies: ["AI", "Software Development", "Templates"],
+    technologies: ["AI", "Software Development", "Programming", "Code Generation", "Technical Expertise"],
     link: "https://syth.ai",
     category: "AI",
-    featured: false,
-    details: "Helped create and refine starter templates for various frameworks, streamlining the development process for users."
+    featured: true,
+    details: "Syth is an expert AI assistant that assists with a wide range of software development tasks, from designing and building applications to debugging and optimizing code. With comprehensive knowledge of programming languages and frameworks, Syth provides detailed solutions including code, instructions, and project guidance."
   }
 ];
 
