@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1a4c8f" />
+      <stop offset="70%" stop-color="#0a2550" />
+      <stop offset="100%" stop-color="#051530" />
+    </radialGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Dark background circle -->
+  <circle cx="300" cy="300" r="290" fill="url(#bg)" />
+  
+  <!-- Outer circle guides -->
+  <circle cx="300" cy="300" r="250" fill="none" stroke="#8aadde" stroke-width="1.5" opacity="0.4" />
+  <circle cx="300" cy="300" r="200" fill="none" stroke="#8aadde" stroke-width="1.5" opacity="0.6" />
+  
+  <!-- Small stars in background -->
+  <circle cx="120" cy="140" r="2" fill="white" opacity="0.8" />
+  <circle cx="480" cy="170" r="2" fill="white" opacity="0.8" />
+  <circle cx="520" cy="420" r="2" fill="white" opacity="0.8" />
+  <circle cx="150" cy="450" r="2" fill="white" opacity="0.8" />
+  <circle cx="380" cy="100" r="2" fill="white" opacity="0.8" />
+  <circle cx="90" cy="320" r="2" fill="white" opacity="0.8" />
+  
+  <!-- Eight-pointed star -->
+  <g filter="url(#glow)">
+    <path d="M300,150 L330,240 L420,210 L360,300 L420,390 L330,360 L300,450 L270,360 L180,390 L240,300 L180,210 L270,240 Z" fill="white" opacity="0.95" />
+    <!-- Smaller inner star -->
+    <path d="M300,200 L320,260 L380,240 L340,300 L380,360 L320,340 L300,400 L280,340 L220,360 L260,300 L220,240 L280,260 Z" fill="#4f89d9" opacity="0.85" />
+  </g>
+  
+  <!-- Central circle -->
+  <circle cx="300" cy="300" r="30" fill="#051530" stroke="white" stroke-width="3" />
+  <circle cx="300" cy="300" r="20" fill="#1a4c8f" />
+</svg>
