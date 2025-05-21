@@ -1,32 +1,30 @@
-/* Smooth scrolling behavior for the entire page */
-html, body {
+/* Optimized smooth scrolling behavior */
+html {
   scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-type: y proximity;
   height: 100%;
-  -webkit-overflow-scrolling: touch; /* For iOS devices */
 }
 
-/* Remove default margin to avoid potential scrolling issues */
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow-y: auto;
 }
 
-/* Custom scrollbar styling */
+/* Custom scrollbar styling - optimized */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(59, 130, 246, 0.5); /* blue-500 with opacity */
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -39,7 +37,8 @@ body {
   scrollbar-color: rgba(59, 130, 246, 0.5) #f1f1f1;
 }
 
-/* Smoother animations for all elements */
-* {
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+/* Apply transitions only to interactive elements that need them */
+a, button, input, select, textarea, .interactive-element {
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+  will-change: transform, opacity;
 } 
