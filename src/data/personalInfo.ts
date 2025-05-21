@@ -40,16 +40,26 @@ export const skills = [
 
 export const projects = [
   {
-    id: "minecraft-3d-maze",
-    title: "Minecraft 3D Maze",
-    description: "A 3D maze game built with p5.js featuring dynamic maze generation with Eller's algorithm, character control, immersive textures, and adaptive user interface.",
-    image: "/src/pictures/Minecraft maze.png",
-    technologies: ["JavaScript", "p5.js", "3D Graphics", "Game Development"],
-    link: "https://samiam2024.itch.io/miinecraft-3d-maze",
-    github: "https://github.com/AALG123/Hackathon-Project",
-    category: "Game Development",
+    id: "syth-ai",
+    title: "Syth AI",
+    description: "An expert AI assistant and senior software developer with extensive knowledge across numerous programming languages, frameworks, and best practices.",
+    image: "/src/pictures/Ios syth app.png",
+    technologies: ["AI", "Software Development", "Programming", "Code Generation", "Technical Expertise"],
+    link: "https://syth.ai",
+    category: "AI",
     featured: true,
-    details: "Created for The First SMCCD Intercollegiate Hackathon, this game features dynamic maze generation using Eller's algorithm, interactive character controls with sound effects, immersive 3D visuals with custom textures, dynamic lighting system, progressive gameplay stages, audio integration, responsive UI, and clear objectives with victory conditions."
+    details: "Syth is an expert AI assistant that assists with a wide range of software development tasks, from designing and building applications to debugging and optimizing code. With comprehensive knowledge of programming languages and frameworks, Syth provides detailed solutions including code, instructions, and project guidance."
+  },
+  {
+    id: "vocis",
+    title: "Vocis",
+    description: "An AI-powered public speaking practice platform built during CalHacks 2024. The application simulates challenging public speaking scenarios to help users improve their skills.",
+    image: "/src/pictures/vocis.png",
+    technologies: ["React", "Next.js", "TailwindCSS", "Shadcn UI", "Hume.AI", "OpenAI"],
+    link: "https://devpost.com/software/vocis",
+    category: "Web Development",
+    featured: true,
+    details: "As part of a hackathon team, I helped develop Vocis, implementing layout designs and a file-import API in Next.js/Tailwind. The app was deployed as a functional prototype at CalHacks v11."
   },
   {
     id: "degree-class-generator",
@@ -62,17 +72,6 @@ export const projects = [
     category: "Educational Software",
     featured: true,
     details: "This tool features an intelligent class generator that considers multiple colleges' course offerings, a user-friendly Java Swing GUI, and Maven integration for streamlined development. It helps students create the most optimal class schedules tailored to their academic needs across all three San Mateo County Community College District schools."
-  },
-  {
-    id: "vocis",
-    title: "Vocis",
-    description: "An AI-powered public speaking practice platform built during CalHacks 2024. The application simulates challenging public speaking scenarios to help users improve their skills.",
-    image: "/src/pictures/vocis.png",
-    technologies: ["React", "Next.js", "TailwindCSS", "Shadcn UI", "Hume.AI", "OpenAI"],
-    link: "https://devpost.com/software/vocis",
-    category: "Web Development",
-    featured: true,
-    details: "As part of a hackathon team, I helped develop Vocis, implementing layout designs and a file-import API in Next.js/Tailwind. The app was deployed as a functional prototype at CalHacks v11."
   },
   {
     id: "gdg-website",
@@ -98,15 +97,16 @@ export const projects = [
     details: "The app improves customer service and inventory management, while the website enhances the store's online presence. This project utilized Kotlin for mobile and standard web technologies for the site."
   },
   {
-    id: "syth-ai",
-    title: "Syth AI",
-    description: "An expert AI assistant and senior software developer with extensive knowledge across numerous programming languages, frameworks, and best practices.",
-    image: "/src/pictures/Ios syth app.png",
-    technologies: ["AI", "Software Development", "Programming", "Code Generation", "Technical Expertise"],
-    link: "https://syth.ai",
-    category: "AI",
+    id: "minecraft-3d-maze",
+    title: "Minecraft 3D Maze",
+    description: "A 3D maze game built with p5.js featuring dynamic maze generation with Eller's algorithm, character control, immersive textures, and adaptive user interface.",
+    image: "/src/pictures/Minecraft maze.png",
+    technologies: ["JavaScript", "p5.js", "3D Graphics", "Game Development"],
+    link: "https://samiam2024.itch.io/miinecraft-3d-maze",
+    github: "https://github.com/AALG123/Hackathon-Project",
+    category: "Game Development",
     featured: true,
-    details: "Syth is an expert AI assistant that assists with a wide range of software development tasks, from designing and building applications to debugging and optimizing code. With comprehensive knowledge of programming languages and frameworks, Syth provides detailed solutions including code, instructions, and project guidance."
+    details: "Created for The First SMCCD Intercollegiate Hackathon, this game features dynamic maze generation using Eller's algorithm, interactive character controls with sound effects, immersive 3D visuals with custom textures, dynamic lighting system, progressive gameplay stages, audio integration, responsive UI, and clear objectives with victory conditions."
   }
 ];
 
