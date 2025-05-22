@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowLeft, Code, Database, Sparkles, Brain, BookOpen, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SythAIPage: React.FC = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-6 py-12">
