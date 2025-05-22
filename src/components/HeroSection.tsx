@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
     >
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00ek0yNCAzMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAMS43OSA0IDQgNCA0LTEuNzkgNC00em0yNCAwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==')] bg-repeat" />
+        <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-[size:20px_20px]" />
       </div>
 
       <div className="container mx-auto px-6 z-10">
@@ -81,6 +81,7 @@ const HeroSection: React.FC = () => {
               <img
                 src={personalInfo.headshot}
                 alt={personalInfo.name}
+                loading="eager" 
                 className="w-full h-full object-cover rounded-full border-4 border-blue-400 shadow-lg animate-fade-in"
               />
               <div className="absolute -inset-1 rounded-full border-2 border-blue-300 opacity-50 animate-pulse"></div>

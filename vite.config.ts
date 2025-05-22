@@ -7,5 +7,15 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Portfolio-Website/',
+  base: '/Portfolio-Website/', // Must match GitHub repo name exactly
+  build: {
+    assetsInlineLimit: 0, // Don't inline assets
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+  },
 });

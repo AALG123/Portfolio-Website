@@ -15,8 +15,8 @@ Beyond coding, I actively participate in hackathons and contribute to open-sourc
     { name: "LinkedIn", url: "https://www.linkedin.com/in/assem-alghaithi/", icon: "Linkedin" },
     { name: "Twitter", url: "https://x.com/sythfounder", icon: "Twitter" }
   ],
-  resumeUrl: "/src/pictures/Resume.pdf",
-  headshot: "/src/pictures/Selfy.jpg"
+  resumeUrl: "./assets/images/Resume.pdf",
+  headshot: "./assets/webp/Selfy.webp"
 };
 
 export const skills = [
@@ -43,7 +43,7 @@ export const projects = [
     id: "syth-ai",
     title: "Syth AI",
     description: "An expert AI assistant and senior software developer with extensive knowledge across numerous programming languages, frameworks, and best practices.",
-    image: "/src/pictures/Ios syth app.png",
+    image: "./assets/webp/Ios syth app.webp",
     technologies: ["AI", "Software Development", "Programming", "Code Generation", "Technical Expertise"],
     link: "https://syth.ai",
     category: "AI",
@@ -54,7 +54,7 @@ export const projects = [
     id: "vocis",
     title: "Vocis",
     description: "An AI-powered public speaking practice platform built during CalHacks 2024. The application simulates challenging public speaking scenarios to help users improve their skills.",
-    image: "/src/pictures/vocis.png",
+    image: "./assets/webp/vocis.webp",
     technologies: ["React", "Next.js", "TailwindCSS", "Shadcn UI", "Hume.AI", "OpenAI"],
     link: "https://devpost.com/software/vocis",
     category: "Web Development",
@@ -65,7 +65,7 @@ export const projects = [
     id: "degree-class-generator",
     title: "Degree Class Generator",
     description: "A course planning tool for Skyline College, Cañada College, and College of San Mateo students that generates optimal class schedules based on course availability and academic goals.",
-    image: "/src/pictures/skylinecollege.png",
+    image: "./assets/webp/skylinecollege.webp",
     technologies: ["Java", "Java Swing", "Maven", "UI Design"],
     link: "https://github.com/AALG123/DegreeClassGenerator",
     github: "https://github.com/AALG123/DegreeClassGenerator",
@@ -77,7 +77,7 @@ export const projects = [
     id: "gdg-website",
     title: "Skyline College GDG Chapter Website",
     description: "Contributed to the Google Developer Group (GDG) on Campus – Skyline College club website with a focus on performance optimization.",
-    image: "/src/pictures/skylinecollege.png",
+    image: "./assets/webp/skylinecollege.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Web Performance"],
     link: "https://www.skylinecs.club/home",
     github: "https://github.com/gdg-skyline",
@@ -89,7 +89,7 @@ export const projects = [
     id: "good-subs",
     title: "Good Subs Market App & Website",
     description: "Led the development of a Kotlin-based Android app and responsive website for Good Subs Market as a volunteer project.",
-    image: "/src/pictures/Goodsubsmarket.png",
+    image: "./assets/webp/Goodsubsmarket.webp",
     technologies: ["Kotlin", "Android", "HTML", "CSS", "JavaScript"],
     link: "https://goodsubsmarkets.com/",
     category: "Mobile Development",
@@ -100,7 +100,7 @@ export const projects = [
     id: "minecraft-3d-maze",
     title: "Minecraft 3D Maze",
     description: "A 3D maze game built with p5.js featuring dynamic maze generation with Eller's algorithm, character control, immersive textures, and adaptive user interface.",
-    image: "/src/pictures/Minecraft maze.png",
+    image: "./assets/webp/Minecraft maze.webp",
     technologies: ["JavaScript", "p5.js", "3D Graphics", "Game Development"],
     link: "https://samiam2024.itch.io/miinecraft-3d-maze",
     github: "https://github.com/AALG123/Hackathon-Project",
